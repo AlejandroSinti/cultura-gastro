@@ -1,0 +1,12 @@
+<div [ngSwitch]="activePage">
+  <app-main *ngSwitchCase = "'main'" (detallesview)="displaydetalles($event)"></app-main>
+  <app-cultura *ngSwitchCase ="'listagastro'" ></app-cultura>
+  <app-detalles-p *ngSwitchCase ="'detalles'" [detalles]="activeDetalle" (productosview)="goToProductos($event)"></app-detalles-p>
+  <app-productos-p *ngSwitchCase ="'productos'"[Productos]="activeProducto"(resetasview)="gotorecetas($event)"></app-productos-p>
+  <app-recetas-p *ngSwitchCase ="'recetas'"[recetas]="activeRecetas"(restaurantesview)="gotorestaurantes($event)"></app-recetas-p>
+  <app-restaurantes-p *ngSwitchCase ="'restaurantes'"[restaurantes]="activeRestaurantes"></app-restaurantes-p>
+</div>
+
+<div>
+<button class="btn btn-primary" type="submit"  (click)="goToSearch()">Regresar</button>
+</div>

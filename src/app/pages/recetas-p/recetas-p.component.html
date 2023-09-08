@@ -1,0 +1,9 @@
+<div *ngIf="recetas" class="card" style="width: 18rem;">
+    <img [src]="recetas.imagen" class="card-img-top" alt="..." >
+    <div class="card-body">
+        <p class="card-text" >{{recetas.nombre}}</p>
+        <p class="card-text" >{{recetas.preparacion}}</p>
+        <button class="btn btn-primary" type="submit"  (click)="gotorestaurantes(recetas.restaurante)" >Ir restaurantes</button>
+
+    </div>   
+</div>

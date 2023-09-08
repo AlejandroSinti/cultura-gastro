@@ -1,0 +1,10 @@
+
+  <div *ngIf="currentOption === 'search'">
+    <div class="input-group mb-3">
+      <input type="text" [(ngModel)]="serachCriteria" class="form-control" placeholder="Buscar gastronomia"
+        aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="buscarcultura()">Buscar</button>
+    </div>
+<div>
+    <app-lista-gastro [listagastros]="searchResultCultura"(detallesview)="irdetalle($event)"></app-lista-gastro>
+</div>

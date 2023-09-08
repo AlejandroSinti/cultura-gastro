@@ -1,0 +1,8 @@
+<div *ngIf="detalles" class="card" style="width: 18rem;">
+    <img [src]="detalles?.paises?.imagen" class="card-img-top" alt="" >
+    <div class="card-body">
+        <p class="card-text" >{{detalles?.paises?.nombre}}</p>
+        <p class="card-text" >{{detalles?.paises?.descripcion}}</p>
+        <button class="btn btn-primary" type="submit" (click)="goToProductos(detalles.productos)">Ir platos:</button>
+    </div>   
+</div>

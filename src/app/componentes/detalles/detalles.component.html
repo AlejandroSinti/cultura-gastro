@@ -1,0 +1,8 @@
+<div *ngfor="let detalle of detalles" class="card" style="width: 18rem;">
+    <div class="row g-0" >
+      <img [src]="" class="card-img-top" alt="..." (click)="irdetalle(detalle)">
+      <div class="card-body">
+        <p class="card-title">{{detalle.detalles}}</p>
+      </div>
+    </div>
+  </div>

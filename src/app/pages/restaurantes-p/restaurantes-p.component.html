@@ -1,0 +1,6 @@
+<div *ngIf="restaurantes" class="card" style="width: 18rem;">
+    <img [src]= "restaurantes.imagen" class="card-img-top" alt="..." >
+    <div class="card-body">
+        <p class="card-text" >{{restaurantes.nombre}}</p>
+        <p class="card-text" >{{restaurantes.estrellas}}</p>
+</div>
